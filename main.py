@@ -1,7 +1,7 @@
 import requests
 
 
-def response_text(city,ci,wind,version,language):
+def get_city_characteristics(city,ci,wind,version,language):
     url_template = 'http://wttr.in/{}?{}{}{}&lang={}'
     url = url_template.format(city,ci,wind,version,language)
     response = requests.get(url)
@@ -10,7 +10,7 @@ def response_text(city,ci,wind,version,language):
 
 
 def main():
-    response_text("Череповец","m","M","Tnq", "ru")
+    get_city_characteristics("Череповец","m","M","Tnq", "ru")
 
 
 if __name__ == '__main__':
