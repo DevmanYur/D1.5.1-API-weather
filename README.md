@@ -26,9 +26,9 @@ get_city_characteristics (city,ci,wind,version,language)
 ```
 
 где:
-- city - [Поддерживаемые типы местоположений]()
-- ci -
-- wind
+- city - [поддерживаемые типы местоположений](https://github.com/DevmanYur/D1.5.1-API-weather?tab=readme-ov-file#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9)
+- ci - [единицы измерений](https://github.com/DevmanYur/D1.5.1-API-weather?tab=readme-ov-file#%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D1%8B-%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B9)
+- wind - 
 - version
 - language
 
@@ -58,6 +58,8 @@ get_city_characteristics (city,ci,wind,version,language)
 
     ?m                      # метрические (СИ) (используются везде кроме США)
     ?u                      # USCS (используются в США)
+
+### Скорость ветра
     ?M                      # показывать скорость ветра в м/с
 
 ### Опции отображения:
