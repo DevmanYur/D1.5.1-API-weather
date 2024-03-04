@@ -32,8 +32,25 @@ get_city_characteristics (city,ci,wind,version,language)
 - version - [опции отображения](https://github.com/DevmanYur/D1.5.1-API-weather?tab=readme-ov-file#%D0%BE%D0%BF%D1%86%D0%B8%D0%B8-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
 - language - [поддерживаемые языки](https://github.com/DevmanYur/D1.5.1-API-weather?tab=readme-ov-file#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8)
 
-# Скрипт по выводу в терминал прогноза погоды
 
+5. Пример функции после подстановки:
+``` python
+get_city_characteristics("Череповец", "m", "M", "Tnq", "ru")
+```
+Где:
+
+      city = "Череповец"
+      ci = "m" - метрические (СИ) (используются везде кроме США)
+      wind = "M" - показывать скорость ветра в м/с
+      version = "Tnq"
+         T - отключить терминальные последовательности (без цветов)
+         n - узкая версия (только день и ночь)
+         q - тихая версия (без текста "Прогноз погоды")
+      language = "ru"  - русский язык
+
+
+
+## Полное описание запросов
 ### Использование:
 
     $ curl wttr.in          # текущее местоположение
