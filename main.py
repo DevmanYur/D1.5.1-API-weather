@@ -2,9 +2,8 @@ import requests
 
 
 def get_city_characteristics(city,ci,wind,version,language):
-    url_template = 'http://wttr.in/{}?{}{}{}&lang={}'
-    url = url_template.format(city,ci,wind,version,language)
-    response = requests.get(url)
+    payload = {ci+wind+version: '', 'lang': language}
+    response = requests.get('http://wttr.in/' + city, params=payload)
     response.raise_for_status()
     return response.text
 
@@ -17,8 +16,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
