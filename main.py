@@ -9,10 +9,14 @@ def get_weather(city,ci,wind,version,language):
 
 
 def main():
-    print(get_weather("London","m","M","Tnq", "ru"))
-    print(get_weather("Аэропорт Шереметьево", "m", "M", "Tnq", "ru"))
-    print(get_weather("Череповец", "m", "M", "Tnq", "ru"))
+    lists_cities = [
+        ("London","m","M","Tnq", "ru"),
+        ("Аэропорт Шереметьево", "m", "M", "Tnq", "ru"),
+        ("Череповец", "m", "M", "Tnq", "ru")
+    ]
 
+    for city in lists_cities:
+        print(get_weather(city[0],city[1],city[2],city[3],city[4]))
 
 if __name__ == '__main__':
     main()
