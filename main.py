@@ -1,7 +1,8 @@
 import requests
 
 
-def get_weather(city,parameters):
+def get_weather(city):
+    parameters = ["m", "M", "Tnq", "ru"]
     payload = {f'{parameters[0]}{parameters[1]}{parameters[2]}': '', 'lang': parameters[3]}
     response = requests.get(f'http://wttr.in/{city}', params=payload)
     response.raise_for_status()
@@ -10,9 +11,8 @@ def get_weather(city,parameters):
 
 def main():
     cities = ["London","Аэропорт Шереметьево", "Череповец"]
-    parameters = ["m","M","Tnq", "ru"]
     for city in cities:
-        print(get_weather(city,parameters))
+        print(get_weather(city))
 
 
 if __name__ == '__main__':
