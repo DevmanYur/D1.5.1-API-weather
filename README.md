@@ -22,7 +22,7 @@ python main.py
 4. Чтобы изменить город, вызовите функцию с параметрами:
 
 ``` python
-get_city_characteristics (city,parameters)
+get_weather(city,parameters)
 ```
 
 где:
@@ -35,7 +35,7 @@ get_city_characteristics (city,parameters)
 
 5. Пример функции после подстановки:
 ``` python
-get_city_characteristics("Череповец", parameters)
+get_weather("Череповец", parameters)
 ```
 Где:
 
