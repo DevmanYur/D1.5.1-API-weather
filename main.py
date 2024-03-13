@@ -2,8 +2,7 @@ import requests
 
 
 def get_weather(city):
-    parameters = ["m", "M", "Tnq", "ru"]
-    payload = {f'{parameters[0]}{parameters[1]}{parameters[2]}': '', 'lang': parameters[3]}
+    payload = {'mMTnq': '', 'lang': 'ru'}
     response = requests.get(f'http://wttr.in/{city}', params=payload)
     response.raise_for_status()
     return response.text
